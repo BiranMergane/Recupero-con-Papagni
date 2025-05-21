@@ -1,1 +1,4 @@
-{{verdure.nome}} {{verdure.descrizione}} {{verdure.prezzo}} <br>
+<p>{{verdure.nome}}
+    <button (click)="salva(nVerdure)">Aggiungi al carrello</button>
+    <input type="number" #nVerdure>
+</p>

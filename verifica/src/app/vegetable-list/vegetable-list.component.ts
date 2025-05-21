@@ -10,4 +10,9 @@ import { Vegetables } from '../models/vegetables.models';
 })
 export class VegetableListComponent {
  @Input() verdure!: Vegetables
+
+
+ salva(nVerdure: HTMLInputElement){
+  
+ }
 }
