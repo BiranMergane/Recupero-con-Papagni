@@ -3,9 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Vegetables } from './models/vegetables.models';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { ThisReceiver } from '@angular/compiler';
 import { VegetableListComponent } from './vegetable-list/vegetable-list.component';
-
 
 @Component({
   selector: 'app-root',
