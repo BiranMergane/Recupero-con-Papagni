@@ -34,7 +34,7 @@ export class AppComponent {
   {
     this.vettInfo = dati
     this.loading = false
-    console.log(this.vettInfo)
+    console.log(this.vettInfo) /*quarto punto*/
   }
   
   ngOnInit(): void {
