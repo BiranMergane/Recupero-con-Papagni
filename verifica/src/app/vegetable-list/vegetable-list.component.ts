@@ -2,11 +2,12 @@ import { Component, Input } from '@angular/core';
 import { Vegetables } from '../models/vegetables.models';
 import { CartProduct } from '../models/cartproduct.model';
 import { DetailsComponent } from '../details/details.component';
+import { CarrelloComponent } from '../carrello/carrello.component';
 
 @Component({
   selector: 'app-vegetable-list',
   standalone: true,
-  imports: [DetailsComponent],
+  imports: [DetailsComponent, CarrelloComponent],
   templateUrl: './vegetable-list.component.html',
   styleUrl: './vegetable-list.component.css'
 })
@@ -17,6 +18,8 @@ export class VegetableListComponent {
   nVerdure: ""
  }
 
+ vettDettagli: Vegetables[] = []
+ 
  vettVerdure: CartProduct[] = []
  
  salva(nVerdure: HTMLInputElement){

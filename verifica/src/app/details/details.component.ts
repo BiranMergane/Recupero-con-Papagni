@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CartProduct } from '../models/cartproduct.model';
+import { Vegetables } from '../models/vegetables.models';
 
 @Component({
   selector: 'app-details',
@@ -9,5 +9,5 @@ import { CartProduct } from '../models/cartproduct.model';
   styleUrl: './details.component.css'
 })
 export class DetailsComponent {
-  @Input() dettagli!: CartProduct
+  @Input() dettagli!: Vegetables
 }

@@ -1,9 +1,14 @@
-<p>{{verdure.nome}}
+<p>
+    {{verdure.nome}}
     <button (click)="salva(nVerdure)">Aggiungi al carrello</button>
     <input type="number" #nVerdure>
 </p>
 
-@for(det of vettVerdure; track det){
+@for(car of vettVerdure; track car){
+    <app-carrello [carrello]="car"></app-carrello>
+}
+
+Dettagli verdure comprate:
+@for(det of vettDettagli; track det){
     <app-details [dettagli]="det"></app-details>
 }
-  
